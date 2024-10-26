@@ -76,7 +76,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         env:
-          IMAGE_BASE_PATH: ${{ GITHUB_REPOSITORY }}.split("/")[1]
+          IMAGE_BASE_PATH: ${{ env.GITHUB_REPOSITORY }}.split("/")[1]
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
