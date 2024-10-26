@@ -80,7 +80,7 @@ export default function Work() {
                 Amazon、Microsoft、GoogleなどのIT企業の支社が豊富
               </li>
               <li className="text-sm font-[family-name:var(--font-geist-sans)]">
-                それぞれのレベルに合った会話相手を探すことも簡単
+                大手のIT企業で働けるチャンスあり
               </li>
             </ul>
           </div>

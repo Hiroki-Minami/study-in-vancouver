@@ -126,7 +126,7 @@ export default function Leisure() {
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">
               <p className="text-lg font-[family-name:var(--font-geist-sans)]">
-                海と山
+                山
               </p>
             </div>
             <ul className="list-disc space-y-4">
