@@ -94,7 +94,7 @@ export default function Leisure() {
     }, 7000)
 
     return () => clearInterval(interval)
-  }, [seaImage.length]);
+  }, [seaImage.length, mountainImage.length, mountainsImage.length]);
 
   return (
     <section className="pt-20 sm:px-8 md:px-24 lg:px-48 xl:px-72">
