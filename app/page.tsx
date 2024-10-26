@@ -50,7 +50,6 @@ export default function Home() {
       <div className="grid gap-4 place-content-center space-y-4">
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center">
-            {/* <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Visible_Minorities_of_Vancouver.png/640px-Visible_Minorities_of_Vancouver.png" alt="Vancouver demographics" width={380} height={200} className="sm:mb-4"></Image> */}
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42971566.19233834!2d-135.50027232440902!3d48.90060108939163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2z44Kr44OK44OA!5e0!3m2!1sja!2sjp!4v1729845658312!5m2!1sja!2sjp" width="400" height="300" className="boarder-0" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="flex flex-col mt-2">
@@ -65,6 +64,12 @@ export default function Home() {
               </li>
               <li className="text-sm font-[family-name:var(--font-geist-sans)]">
                 人口は4000万人
+              </li>
+              <li className="text-sm font-[family-name:var(--font-geist-sans)]">
+                建国は1867年
+              </li>
+              <li className="text-sm font-[family-name:var(--font-geist-sans)]">
+                完全な独立は1982年
               </li>
             </ul>
           </div>
