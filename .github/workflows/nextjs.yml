@@ -80,7 +80,7 @@ jobs:
         run: echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
       - name: Build with Next.js
         env:
-          IMAGE_BASE_PATH: ${{ env.GITHUB_REPOSITORY }}.split("/")[1]
+          IMAGE_BASE_PATH: ${{ github.event.repository.name }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
