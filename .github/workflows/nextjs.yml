@@ -77,7 +77,7 @@ jobs:
       - name: Debug envs
         env:
           IMAGE_BASE_PATH: ${{ env.GITHUB_REPOSITORY }}.split("/")[1]
-        run: echo ${{ env.IMAGE_BASE_PATH }}
+        run: echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
       - name: Build with Next.js
         env:
           IMAGE_BASE_PATH: ${{ env.GITHUB_REPOSITORY }}.split("/")[1]
