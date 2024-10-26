@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "npm run build",
+    "predeploy": "IMAGE_BASE_PATH='/study-in-vancouver' npm run build",
     "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint"

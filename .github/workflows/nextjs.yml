@@ -80,7 +80,7 @@ jobs:
         run: echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
       - name: Build with Next.js
         env:
-          IMAGE_BASE_PATH: ${{ github.event.repository.name }}
+          IMAGE_BASE_PATH: /${{ github.event.repository.name }}
         run: |
           echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
           IMAGE_BASE_PATH=${{ github.event.repository.name }} ${{ steps.detect-package-manager.outputs.runner }} next build
