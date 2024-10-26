@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import GithubPageImage from "../ui/component/GithuPageImage";
 
 export default function Study() {
   const [ubcImageIndex, setUbcImageIndex] = useState(0);
@@ -38,7 +39,7 @@ export default function Study() {
       <div className="grid gap-4 place-content-center space-y-4">
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center">
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Visible_Minorities_of_Vancouver.png/640px-Visible_Minorities_of_Vancouver.png" alt="Vancouver demographics" width={380} height={200} className="sm:mb-4"></Image>
+            <GithubPageImage src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Visible_Minorities_of_Vancouver.png/640px-Visible_Minorities_of_Vancouver.png" alt="Vancouver demographics" width={380} height={200} className="sm:mb-4"></GithubPageImage>
           </div>
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">
@@ -58,7 +59,7 @@ export default function Study() {
         </div>
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center space-y-8 relative overflow-hidden">
-            <Image src={ubcImage[ubcImageIndex].src} alt={ubcImage[ubcImageIndex].alt} width={ubcImage[ubcImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-300 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></Image>
+            <GithubPageImage src={ubcImage[ubcImageIndex].src} alt={ubcImage[ubcImageIndex].alt} width={ubcImage[ubcImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-300 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></GithubPageImage>
           </div>
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">

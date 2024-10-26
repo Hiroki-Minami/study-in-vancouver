@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import GithubPageImage from "../ui/component/GithuPageImage";
 
 export default function Leisure() {
   const [seaImageIndex, setSeaImageIndex] = useState(0);
@@ -101,7 +102,7 @@ export default function Leisure() {
       <div className="grid gap-4 place-content-center space-y-4">
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center space-y-8 relative overflow-hidden">
-            <Image src={seaImage[seaImageIndex].src} alt={seaImage[seaImageIndex].alt} width={seaImage[seaImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-700 ease-in-out object-cover ${isVisible ? "opacity-100" : "opacity-0"}`}></Image>
+            <GithubPageImage src={seaImage[seaImageIndex].src} alt={seaImage[seaImageIndex].alt} width={seaImage[seaImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-700 ease-in-out object-cover ${isVisible ? "opacity-100" : "opacity-0"}`}></GithubPageImage>
           </div>
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">
@@ -121,7 +122,7 @@ export default function Leisure() {
         </div>
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center space-y-8 relative overflow-hidden">
-            <Image src={mountainImage[mountainImageIndex].src} alt={mountainImage[mountainImageIndex].alt} width={mountainImage[mountainImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-300 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></Image>
+            <GithubPageImage src={mountainImage[mountainImageIndex].src} alt={mountainImage[mountainImageIndex].alt} width={mountainImage[mountainImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-300 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></GithubPageImage>
           </div>
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">
