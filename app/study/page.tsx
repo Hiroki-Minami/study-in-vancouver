@@ -58,7 +58,7 @@ export default function Study() {
         </div>
         <div className="md:grid grid-cols-2 px-4 md:space-x-16">
           <div className="flex flex-col items-center space-y-8 relative overflow-hidden">
-            <Image src={ubcImage[ubcImageIndex].src} alt={ubcImage[ubcImageIndex].alt} width={ubcImage[ubcImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-1000 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></Image>
+            <Image src={ubcImage[ubcImageIndex].src} alt={ubcImage[ubcImageIndex].alt} width={ubcImage[ubcImageIndex].width} height={200} className={`sm:mb-4 bg-white transition-opacity duration-300 ease-in-out ${isVisible ? "opacity-100" : "opacity-0"}`}></Image>
           </div>
           <div className="flex flex-col mt-2">
             <div className="flex f sm:mb-4 md:mb-8 place-content-center">
