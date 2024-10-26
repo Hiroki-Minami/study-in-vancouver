@@ -82,7 +82,6 @@ jobs:
         env:
           IMAGE_BASE_PATH: /${{ github.event.repository.name }}
         run: |
-          # IMAGE_BASE_PATH=/${{ github.event.repository.name }}; ${{ steps.detect-package-manager.outputs.runner }} next build; echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
           IMAGE_BASE_PATH=/${{ github.event.repository.name }}; npm run build; echo "IMAGE_BASE_PATH is set to $IMAGE_BASE_PATH"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
