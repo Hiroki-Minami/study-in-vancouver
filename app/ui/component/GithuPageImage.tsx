@@ -5,7 +5,7 @@ interface GithubPageImageProps extends React.ComponentProps<typeof Image> {
 }
 
 const GithubPageImage: React.FC<GithubPageImageProps> = ({ src, ...props }) => {
-  const basePath =  process.env.IMAGE_BASE_PATH || '';
+  // const basePath =  process.env.IMAGE_BASE_PATH || '';
   if (!src.startsWith("https")) {
     return <Image src={`/study-in-vancouver${src}`} {...props} />;
   } else {
